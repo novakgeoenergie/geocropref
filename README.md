@@ -1,9 +1,11 @@
 GeoCropRef: Plugin Documentation
 
+
 1. Introduction and Purpose of the Plugin
 GeoCropRef is a QGIS tool designed to solve a common problem when georeferencing scanned maps and historical plans: unnecessary borders (white frames, legends, empty margins).
 If you don’t crop these borders before georeferencing, transformation algorithms (such as Thin Plate Spline) unnecessarily distort the empty areas, resulting in ugly “black corners” and warped edges in the final GeoTIFF.
 This plugin enables fast visual cropping using the mouse and automatically passes the cropped image to QGIS’s native Georeferencer.
+
 
 2. Main Features
 Visual Cropping: A tool for drawing a cropping rectangle directly on the plugin canvas.
