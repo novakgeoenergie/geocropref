@@ -1,0 +1,11 @@
+[general]
+name=Geo Crop Ref
+qgisMinimumVersion=3.0
+description=Crops an image (map/plan) before using it in the Georeferencer.
+version=1.1
+author=Petr Novak
+email=
+about=A tool for visual cropping of unneeded borders (legends, white frames) on scanned Maps, Printscreens etc.
+tracker=
+repository=
+category=Raster
