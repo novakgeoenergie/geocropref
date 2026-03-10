@@ -8,5 +8,4 @@ email=
 about=A tool for visual cropping of unneeded borders (legends, white frames) on scanned Maps, Printscreens etc.
 tracker=
 repository=https://github.com/novakgeoenergie/geocropref/blob/main/geocropref
-
 category=Raster
