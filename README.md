@@ -2,12 +2,14 @@ GeoCropRef: Plugin Documentation
 
 
 1. Introduction and Purpose of the Plugin
+
 GeoCropRef is a QGIS tool designed to solve a common problem when georeferencing scanned maps and historical plans: unnecessary borders (white frames, legends, empty margins).
 If you don’t crop these borders before georeferencing, transformation algorithms (such as Thin Plate Spline) unnecessarily distort the empty areas, resulting in ugly “black corners” and warped edges in the final GeoTIFF.
 This plugin enables fast visual cropping using the mouse and automatically passes the cropped image to QGIS’s native Georeferencer.
 
 
 2. Main Features
+
 Visual Cropping: A tool for drawing a cropping rectangle directly on the plugin canvas.
 Lossless Processing (GDAL): Cropping is performed via gdal.Translate at the pixel level—no compression, no quality loss of the original scan.
 Clean Disk (Temp Files): Option to save the cropped image only as a temporary OS file so your drive isn’t cluttered with intermediate data.
@@ -15,6 +17,7 @@ Auto‑Load into Georeferencer: The plugin can automatically launch the Georefer
 Clipboard Backup: The path to the cropped file is always copied to your clipboard for manual insertion if needed.
 
 3. Installation
+
 Since this is a custom local plugin:
 
 Open the plugin directory for your QGIS installation:
@@ -27,6 +30,7 @@ Go to Plugins → Manage and Install Plugins…
 Under Installed, find GeoCropRef and enable it.
 
 4. User Guide (Step by Step)
+
 In the main QGIS menu, click Raster → Crop Image for Georeferencing.
 A plugin window opens. Click “1. Load Image”.
 Select your scanned file (supported: TIF, JPG, PNG). The raster will display in the canvas.
@@ -45,6 +49,7 @@ The plugin window closes, QGIS Georeferencer opens instantly, and your cleanly c
 You can now start adding Ground Control Points (GCPs) as usual.
 
 5. Troubleshooting
+
 Problem: The Georeferencer opens, but the image is not loaded.
 Cause: In some very specific QGIS versions, window rendering is delayed, causing the Auto‑Load command to fail.
 Solution: The plugin anticipates this. The file path was automatically copied to your clipboard.
