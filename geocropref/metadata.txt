@@ -6,8 +6,11 @@ version=1.1
 author=Petr Novak
 email=novak.geoenergie@gmail.com
 about=A handy tool that allows you to draw a bounding box over a scanned image to crop out white borders, legends, or margins. It uses GDAL to physically crop the raster losslessly, saving it to a temporary file, and automatically pushing the result to the native QGIS Georeferencer.
-tracker=
+tracker=https://github.com/novakgeoenergie/geocropref/blob/main/geocropref
 repository=https://github.com/novakgeoenergie/geocropref/blob/main/geocropref
+homepage=https://github.com/novakgeoenergie/geocropref/blob/main/geocropref
 category=Raster
+tags=georeferencer, crop, raster, gdal, scan, map
+experimental=True
 
 
