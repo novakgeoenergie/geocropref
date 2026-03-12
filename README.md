@@ -63,3 +63,9 @@ Problem: The raster appears distorted when loaded into the plugin.
 Cause: QGIS attempts to apply a coordinate system to an image that doesn’t have one yet.
 Solution: This is only a visual preview issue in the plugin window.
 Cropping uses actual pixel coordinates (srcWin), so the resulting image will NOT be distorted.
+
+6. License
+This plugin is licensed under the **GNU General Public License v2.0** (GPLv2). 
+See the `LICENSE` file for more details. 
+
+Because it interacts with QGIS core libraries, it inherently inherits the open-source philosophy of the QGIS project. Feel free to fork, modify, and improve this tool!
